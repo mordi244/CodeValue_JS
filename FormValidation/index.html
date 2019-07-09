@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <title>Contact Form</title>
+
+  <link rel="stylesheet" href="index.css">
+
+</head>
+
+<body>
+
+  <!--Form section-->
+  <section>
+    <h1 id="contactHeader">Form Validation</h1>
+    <div id="formsection">
+
+      <!--Form method is GET in purpse , it cant be POST without handling the request-->
+      <form id="formId" action="/" method="GET">
+
+
+        <div class="formdiv">
+          <!--Error div-->
+          <div id="errId"></div>
+
+          <!--First and last name-->
+          <div class="form-row">
+            <label for="first-name">First Name:</label>
+            <input type="text" name="username" id="nameId" placeholder="John" />
+          </div>
+
+          <!--Address-->
+          <div class="form-row">
+            <label for="address">Address</label>
+            <input type="text" name="address" id="addressId" placeholder="Hertzel 42">
+          </div>
+          <button id="btnId">Submit</button>
+        </div>
+      </form>
+
+
+
+    </div>
+
+  </section>
+  <script src="index.js"></script>
+</body>
+
+</html>
