@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Document</title>
+	<link rel=stylesheet type="text/css" href="/css/game.css">
+
+</head>
+
+<body>
+	<h1>Conway's Game of Life</h1>
+	<div class="center">
+		<button id="startBtnId" class="selecting"><span>Start</span></button>
+		<button id="clearBtnId" class="selecting"><span>Clear</span></button>
+		<button id="randomBtnId" class="selecting"><span>Random</span></button>
+		<select id="sizeId" class="selecting">
+			<option disabled selected value="">Choose Board Size</option>
+			<option value="Big">Large</option>
+			<option value="Medium">Medium</option>
+			<option value="Small">Small</option>
+		</select>
+		<div id="container"></div>
+		<footer>
+			<p>Copyright &copy; Mordi Abukarat 2019</p>
+		</footer>
+	</div>
+
+	<script type="text/javascript" src="js/game.js"></script>
+</body>
+
+</html>

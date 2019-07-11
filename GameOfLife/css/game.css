@@ -1,0 +1,83 @@
+body {
+    padding:1em;
+    margin: 1em;
+    background-color: rgba(59, 88, 51, 0.788);
+}
+h1 {
+    font-family: 'verdana';
+    text-align: center;
+    color:white;
+}
+/* center class for centering the main section which is the table*/
+.center {
+    margin: auto;
+    width: 70rem;
+    height: 30rem;
+    padding: 1.5rem;
+}
+/* the container that will wrap the table*/
+#container {
+    position: relative;
+    margin: 0;
+    overflow: auto;
+    display: flex;
+}
+/* table - the matrix*/
+table {
+    border:1px rgb(241, 241, 241) solid;
+    border-spacing: 0;
+    flex:1;
+    overflow:hidden 
+}
+/* live class - paint the cell */
+.live {
+    background-color:rgba(0, 0, 0, 0.685);
+}
+/* dead class - remove the background from the cell*/
+.dead {
+    background-color:rgba(228, 228, 241, 0.829);
+}
+td {
+    flex:1;
+    position: relative;
+    border:1px rgb(29, 182, 29) solid;
+    width: 0.5rem;
+    height: 0.5rem;
+}
+button:hover {
+    background-color: rgba(144, 180, 145, 0.596);
+    color: rgb(54, 59, 54) 
+}
+/* positioning footer */
+footer {
+    margin-top:3%;
+    margin-bottom: 3%;
+    bottom: 0;
+    text-align: center;
+}
+/* style to buttons and select box*/
+.selecting {
+    background-color: #4CAF50;
+   /* Green */
+    border: none;
+    color: white;
+    padding: 1rem 2rem;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 1.5rem 0.2rem;
+    transition-duration: 0.4s;
+    cursor: pointer;
+}
+/* Media Queries - set the width according to screen size*/
+@media screen and (max-width: 1424px) {
+    .center {
+        width: 50rem;
+   }
+}
+@media screen and (max-width: 924px) {
+    .center {
+        width: 30rem;
+   }
+}
